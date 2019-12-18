@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19C5630335D6D3E9EB8C7387 /* libPods-WHButton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CA761D71CBAD192C272533 /* libPods-WHButton.a */; };
+		D7C7695923A9CDE40085BCE8 /* UIImage+GKGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C7695723A9CDE40085BCE8 /* UIImage+GKGradient.m */; };
+		D7C7695C23A9D2260085BCE8 /* WHButtonGradientBgInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C7695B23A9D2260085BCE8 /* WHButtonGradientBgInfo.m */; };
+		D7F7097623A787D700F28CBA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F7097523A787D700F28CBA /* AppDelegate.m */; };
+		D7F7097923A787D700F28CBA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F7097823A787D700F28CBA /* SceneDelegate.m */; };
+		D7F7097C23A787D700F28CBA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F7097B23A787D700F28CBA /* ViewController.m */; };
+		D7F7097F23A787D700F28CBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F7097D23A787D700F28CBA /* Main.storyboard */; };
+		D7F7098123A787DD00F28CBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7F7098023A787DD00F28CBA /* Assets.xcassets */; };
+		D7F7098423A787DD00F28CBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F7098223A787DD00F28CBA /* LaunchScreen.storyboard */; };
+		D7F7098723A787DD00F28CBA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F7098623A787DD00F28CBA /* main.m */; };
+		D7F7098F23A789C300F28CBA /* WHButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F7098E23A789C300F28CBA /* WHButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7094A7D6129B295BD878EE1E /* Pods-WHButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHButton.debug.xcconfig"; path = "Target Support Files/Pods-WHButton/Pods-WHButton.debug.xcconfig"; sourceTree = "<group>"; };
+		88CA761D71CBAD192C272533 /* libPods-WHButton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WHButton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E46E3B389EB32214DE0826 /* Pods-WHButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WHButton.release.xcconfig"; path = "Target Support Files/Pods-WHButton/Pods-WHButton.release.xcconfig"; sourceTree = "<group>"; };
+		D7C7695723A9CDE40085BCE8 /* UIImage+GKGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GKGradient.m"; sourceTree = "<group>"; };
+		D7C7695823A9CDE40085BCE8 /* UIImage+GKGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GKGradient.h"; sourceTree = "<group>"; };
+		D7C7695A23A9D2260085BCE8 /* WHButtonGradientBgInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHButtonGradientBgInfo.h; sourceTree = "<group>"; };
+		D7C7695B23A9D2260085BCE8 /* WHButtonGradientBgInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHButtonGradientBgInfo.m; sourceTree = "<group>"; };
+		D7C7695D23A9D9B60085BCE8 /* WHButtonConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHButtonConst.h; sourceTree = "<group>"; };
+		D7F7097123A787D700F28CBA /* WHButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WHButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7F7097423A787D700F28CBA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7F7097523A787D700F28CBA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D7F7097723A787D700F28CBA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		D7F7097823A787D700F28CBA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		D7F7097A23A787D700F28CBA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D7F7097B23A787D700F28CBA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D7F7097E23A787D700F28CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D7F7098023A787DD00F28CBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7F7098323A787DD00F28CBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D7F7098523A787DD00F28CBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7F7098623A787DD00F28CBA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D7F7098D23A789C300F28CBA /* WHButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHButton.h; sourceTree = "<group>"; };
+		D7F7098E23A789C300F28CBA /* WHButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7F7096E23A787D700F28CBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19C5630335D6D3E9EB8C7387 /* libPods-WHButton.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11311336922B5795E5C75FD2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7094A7D6129B295BD878EE1E /* Pods-WHButton.debug.xcconfig */,
+				C5E46E3B389EB32214DE0826 /* Pods-WHButton.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		28AD83C2B081B5FC730C662F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88CA761D71CBAD192C272533 /* libPods-WHButton.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7F7096823A787D700F28CBA = {
+			isa = PBXGroup;
+			children = (
+				D7F7097323A787D700F28CBA /* WHButton */,
+				D7F7097223A787D700F28CBA /* Products */,
+				11311336922B5795E5C75FD2 /* Pods */,
+				28AD83C2B081B5FC730C662F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D7F7097223A787D700F28CBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7F7097123A787D700F28CBA /* WHButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7F7097323A787D700F28CBA /* WHButton */ = {
+			isa = PBXGroup;
+			children = (
+				D7F7097423A787D700F28CBA /* AppDelegate.h */,
+				D7F7097523A787D700F28CBA /* AppDelegate.m */,
+				D7F7097723A787D700F28CBA /* SceneDelegate.h */,
+				D7F7097823A787D700F28CBA /* SceneDelegate.m */,
+				D7F7097A23A787D700F28CBA /* ViewController.h */,
+				D7F7097B23A787D700F28CBA /* ViewController.m */,
+				D7F7098D23A789C300F28CBA /* WHButton.h */,
+				D7F7098E23A789C300F28CBA /* WHButton.m */,
+				D7C7695A23A9D2260085BCE8 /* WHButtonGradientBgInfo.h */,
+				D7C7695B23A9D2260085BCE8 /* WHButtonGradientBgInfo.m */,
+				D7C7695823A9CDE40085BCE8 /* UIImage+GKGradient.h */,
+				D7C7695723A9CDE40085BCE8 /* UIImage+GKGradient.m */,
+				D7C7695D23A9D9B60085BCE8 /* WHButtonConst.h */,
+				D7F7097D23A787D700F28CBA /* Main.storyboard */,
+				D7F7098023A787DD00F28CBA /* Assets.xcassets */,
+				D7F7098223A787DD00F28CBA /* LaunchScreen.storyboard */,
+				D7F7098523A787DD00F28CBA /* Info.plist */,
+				D7F7098623A787DD00F28CBA /* main.m */,
+			);
+			path = WHButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7F7097023A787D700F28CBA /* WHButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7F7098A23A787DD00F28CBA /* Build configuration list for PBXNativeTarget "WHButton" */;
+			buildPhases = (
+				C2C67109B5FC0D6841D0A6C3 /* [CP] Check Pods Manifest.lock */,
+				D7F7096D23A787D700F28CBA /* Sources */,
+				D7F7096E23A787D700F28CBA /* Frameworks */,
+				D7F7096F23A787D700F28CBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WHButton;
+			productName = WHButton;
+			productReference = D7F7097123A787D700F28CBA /* WHButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7F7096923A787D700F28CBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "黄文鸿";
+				TargetAttributes = {
+					D7F7097023A787D700F28CBA = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D7F7096C23A787D700F28CBA /* Build configuration list for PBXProject "WHButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7F7096823A787D700F28CBA;
+			productRefGroup = D7F7097223A787D700F28CBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7F7097023A787D700F28CBA /* WHButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7F7096F23A787D700F28CBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F7098423A787DD00F28CBA /* LaunchScreen.storyboard in Resources */,
+				D7F7098123A787DD00F28CBA /* Assets.xcassets in Resources */,
+				D7F7097F23A787D700F28CBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2C67109B5FC0D6841D0A6C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WHButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7F7096D23A787D700F28CBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7F7097C23A787D700F28CBA /* ViewController.m in Sources */,
+				D7C7695C23A9D2260085BCE8 /* WHButtonGradientBgInfo.m in Sources */,
+				D7F7097623A787D700F28CBA /* AppDelegate.m in Sources */,
+				D7F7098723A787DD00F28CBA /* main.m in Sources */,
+				D7F7097923A787D700F28CBA /* SceneDelegate.m in Sources */,
+				D7F7098F23A789C300F28CBA /* WHButton.m in Sources */,
+				D7C7695923A9CDE40085BCE8 /* UIImage+GKGradient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D7F7097D23A787D700F28CBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7F7097E23A787D700F28CBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D7F7098223A787DD00F28CBA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D7F7098323A787DD00F28CBA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D7F7098823A787DD00F28CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D7F7098923A787DD00F28CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7F7098B23A787DD00F28CBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7094A7D6129B295BD878EE1E /* Pods-WHButton.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3M3E392L4;
+				INFOPLIST_FILE = WHButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangwenhong.WHButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7F7098C23A787DD00F28CBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5E46E3B389EB32214DE0826 /* Pods-WHButton.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E3M3E392L4;
+				INFOPLIST_FILE = WHButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.huangwenhong.WHButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7F7096C23A787D700F28CBA /* Build configuration list for PBXProject "WHButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F7098823A787DD00F28CBA /* Debug */,
+				D7F7098923A787DD00F28CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7F7098A23A787DD00F28CBA /* Build configuration list for PBXNativeTarget "WHButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F7098B23A787DD00F28CBA /* Debug */,
+				D7F7098C23A787DD00F28CBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D7F7096923A787D700F28CBA /* Project object */;
+}
