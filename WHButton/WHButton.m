@@ -15,6 +15,8 @@ StateKey(UIControlState state) {
     return @(state).stringValue;
 }
 
+#define IntrinsicSizeGreater [self intrinsicSizeGreater]
+
 @interface WHButton()
 
 @property (nonatomic, assign) WHButtonAlignment alignment;
@@ -141,7 +143,7 @@ StateKey(UIControlState state) {
     [self.bgInfoDict enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, WHButtonGradientBgInfo * _Nonnull bgInfo, BOOL * _Nonnull stop) {
         UIControlState state = (UIControlState)[key integerValue];
         UIImage *img = [self imageForState:state];
-        CGSize size = contentRect_.size;
+        CGSize size = IntrinsicSizeGreater ?  contentRect_.size : self.bounds.size;
         if(!img || !CGSizeEqualToSize(bgInfo.imageSize, size)) {//需要绘制图片
 //            NSLog(@"绘制");
             bgInfo.imageSize = size;
@@ -160,19 +162,44 @@ StateKey(UIControlState state) {
 
 #pragma mark - override 尺寸方法
 - (CGRect)contentRectForBounds:(CGRect)bounds {
-    return contentRect_;
+    if(IntrinsicSizeGreater) {
+        return contentRect_;
+    } else {
+        return bounds;
+    }
 }
 
 - (CGRect)backgroundRectForBounds:(CGRect)bounds {
-    return contentRect_;
+    return bounds;
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
-    return titleRect_;
+    if(CGRectEqualToRect(contentRect, contentRect_)) {
+        return titleRect_;
+    } else {
+        CGFloat deltaW = CGRectGetWidth(contentRect) - CGRectGetWidth(contentRect_);
+        CGFloat deltaH = CGRectGetHeight(contentRect) - CGRectGetHeight(contentRect_);
+        CGRect titRect = titleRect_;
+        titRect.origin.x += deltaW/2.0;
+        titRect.origin.y += deltaH/2.0;
+        
+//        NSLog(@"titrect %@, content rect: %@  content rect_: %@", NSStringFromCGRect(titRect), NSStringFromCGRect(contentRect), NSStringFromCGRect(contentRect_));
+        
+        return titRect;
+    }
 }
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
-    return imageRect_;
+    if(CGRectEqualToRect(contentRect, contentRect_)) {
+        return imageRect_;
+    } else {
+        CGFloat deltaW = CGRectGetWidth(contentRect) - CGRectGetWidth(contentRect_);
+        CGFloat deltaH = CGRectGetHeight(contentRect) - CGRectGetHeight(contentRect_);
+        CGRect imgRect = imageRect_;
+        imgRect.origin.x += deltaW/2.0;
+        imgRect.origin.y += deltaH/2.0;
+        return imgRect;
+    }
 }
 
 - (CGSize)intrinsicContentSize {
@@ -218,6 +245,15 @@ StateKey(UIControlState state) {
         _bgInfoDict = [NSMutableDictionary new];
     }
     return _bgInfoDict;
+}
+
+#pragma mark - 辅助方法
+- (BOOL)intrinsicSizeGreater {
+    if(CGRectGetWidth(self.bounds) < CGRectGetWidth(contentRect_) && CGRectGetHeight(self.bounds) < CGRectGetHeight(contentRect_)) {
+        return YES;
+    } else {
+        return NO;
+    }
 }
 @end
 
