@@ -35,7 +35,7 @@ StateKey(UIControlState state) {
 
 #pragma mark - init
 + (instancetype)buttonWithAligment:(WHButtonAlignment)alignment {
-    WHButton *btn = [[WHButton alloc] initWithAligment:alignment];
+    WHButton *btn = [[self alloc] initWithAligment:alignment];
     return btn;
 }
 - (instancetype)initWithAligment:(WHButtonAlignment)alignment {
@@ -142,7 +142,7 @@ StateKey(UIControlState state) {
     }
     [self.bgInfoDict enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, WHButtonGradientBgInfo * _Nonnull bgInfo, BOOL * _Nonnull stop) {
         UIControlState state = (UIControlState)[key integerValue];
-        UIImage *img = [self imageForState:state];
+        UIImage *img = [self backgroundImageForState:state];
         CGSize size = IntrinsicSizeGreater ?  contentRect_.size : self.bounds.size;
         if(!img || !CGSizeEqualToSize(bgInfo.imageSize, size)) {//需要绘制图片
 //            NSLog(@"绘制");
